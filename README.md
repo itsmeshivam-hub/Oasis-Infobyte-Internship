@@ -1,78 +1,108 @@
+# Oasis Infobyte – Java Development Internship
 
-# Online Examination System
+Welcome to my **Java Development Internship Projects** repository at **Oasis Infobyte**.
 
-A desktop-based Online Examination System developed using Java Swing. The application provides a graphical interface for student login, profile updates, timed multiple-choice examinations, automatic submission, and result evaluation.
+This repository contains five practical tasks focused on Java programming, Object-Oriented Programming, GUI development, database management, and web application development.
 
-## Features
+## 📌 Internship Tasks
 
-- **Student Login:** Login using predefined credentials.
-- **Profile Management:** Update the display name and password before starting the exam.
-- **Multiple-Choice Questions:** Attempt Java programming questions with four options per question.
-- **Exam Timer:** A 30-minute countdown timer with automatic submission when time expires.
-- **Question Navigation:** Move between questions using Previous and Next buttons.
-- **Answer Tracking:** Save selected answers while navigating through the examination.
-- **Automatic Evaluation:** Calculate the score based on correct answers.
-- **Detailed Results:** View the final score, time taken, selected answers, correct answers, and question-wise results.
-- **Submission Confirmation:** Confirm before submitting the examination.
-- **Logout Functionality:** Return to the login screen after viewing results.
+### Task 1 – Online Reservation System
+**Technologies:** Java, Swing, JDBC, SQLite/MySQL
 
-## Technologies Used
+- User login authentication.
+- Train/transport reservation system.
+- Automatic PNR generation.
+- Booking confirmation.
+- Ticket cancellation using PNR.
+- Database connectivity and input validation.
+
+### Task 2 – Number Guessing Game
+**Technologies:** Java, Random, Scanner
+
+- Random number generation.
+- Higher and lower hints.
+- Attempt counter and maximum attempts.
+- Multiple rounds and score tracking.
+- Three difficulty levels: Easy, Medium, and Hard.
+
+### Task 3 – ATM Interface
+**Technologies:** Java, OOP, ArrayList
+
+- User authentication with ID and PIN.
+- Balance enquiry and transaction history.
+- Cash withdrawal and deposit.
+- Money transfer functionality.
+- Insufficient balance validation.
+- Object-Oriented Programming with multiple classes.
+
+### Task 4 – Online Examination System
+**Technologies:** Java, Swing, AWT
+
+- Student login and profile update.
+- Multiple-choice question interface.
+- Next and Previous navigation.
+- Countdown timer with automatic submission.
+- Manual submission with confirmation.
+- Result calculation and performance summary.
+- Logout functionality.
+
+### Task 5 – Digital Library Management System
+**Technologies:** Java, Servlets/JSP or Spring Boot, MySQL/SQLite, HTML, CSS
+
+**Admin Module:**
+- Admin login authentication.
+- Add, edit, and delete books.
+- Manage book catalogue.
+- Track issued books and due dates.
+- Manage registered members.
+- Fine management and payment tracking.
+
+## 🛠️ Technologies & Concepts
 
 - Java
-- Java Swing
-- AWT (Abstract Window Toolkit)
 - Object-Oriented Programming (OOP)
-- Event Handling
-- Arrays and Conditional Statements
-- Java Timer
+- Java Swing and AWT
+- JDBC
+- SQL and Database Management
+- ArrayList and Collections Framework
+- Exception Handling
+- HTML and CSS
+- Servlets/JSP or Spring Boot
 
-## Getting Started
+## 📂 Repository Structure
 
-### Prerequisites
-
-- Java Development Kit (JDK)
-- IntelliJ IDEA or another Java IDE
-
-### Installation and Execution
-
-1. Clone or download this repository.
-2. Open the project in your preferred Java IDE.
-3. Ensure that `OnlineExaminationSystem.java` is in the source directory.
-4. Compile and run the application.
-
-### Run Using Terminal
-
-```bash
-javac OnlineExaminationSystem.java
-java OnlineExaminationSystem
+```text
+Oasis-Infobyte-Internship/
+│
+├── Task-1-Online-Reservation-System/
+│
+├── Task-2-Number-Guessing-Game/
+│
+├── Task-3-ATM-Interface/
+│
+├── Task-4-Online-Examination-System/
+│
+├── Task-5-Digital-Library-Management-System/
+│
+└── README.md
 ```
 
-## Default Login Credentials
+## 🎯 Learning Outcomes
 
-- **Username:** `student`
-- **Password:** `1234`
+- Strengthened Java programming fundamentals.
+- Applied Object-Oriented Programming concepts.
+- Developed GUI-based Java applications.
+- Practiced database connectivity and SQL operations.
+- Improved logical thinking and problem-solving.
+- Gained practical software development experience.
 
-These are the default credentials defined in the source code.
+## 🙏 Acknowledgement
 
-## Examination Details
-
-- **Subject:** Java Programming
-- **Total Questions:** 5
-- **Question Type:** Multiple Choice Questions (MCQs)
-- **Time Limit:** 30 minutes
-- **Scoring:** One point for each correct answer
-
-## Learning Objectives
-
-This project demonstrates practical implementation of Java Swing GUI development, event-driven programming, timer management, question navigation, answer evaluation, and basic application flow control.
-
-## Author
-
-**Shivam Tiwari**
-
-- GitHub: [itsmeshivam-hub](https://github.com/itsmeshivam-hub)
-- LinkedIn: [Shivam Tiwari](https://www.linkedin.com/in/shivamtiwari-tech/)
+I would like to thank **Oasis Infobyte** for providing me with this internship opportunity and allowing me to improve my technical and practical development skills.
 
 ---
 
-If you find this project useful, consider giving the repository a star.
+**Developed by Shivam Tiwari**
+
+- GitHub: https://github.com/itsmeshivam-hub
+- LinkedIn: https://www.linkedin.com/in/shivamtiwari-tech/
