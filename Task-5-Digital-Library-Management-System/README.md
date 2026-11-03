@@ -4,12 +4,6 @@
   A web-based library management application developed using Java Spring Boot and MySQL.
 </p>
 
-<p align="center">
-  ![Java](https://img.shields.io/badge/Java-17-orange?logo=openjdk)
-  ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.4.5-brightgreen?logo=springboot)
-  ![MySQL](https://img.shields.io/badge/MySQL-Database-blue?logo=mysql)
-  ![Status](https://img.shields.io/badge/Status-Completed-success)
-</p>
 
 ---
 
