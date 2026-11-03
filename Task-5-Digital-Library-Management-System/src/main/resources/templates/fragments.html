@@ -1,0 +1,11 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org"><body>
+<nav th:fragment="nav">
+ <a href="/">Digital Library</a>
+ <span><a href="/user/books">Catalogue</a> <a href="/user/loans">My Loans</a> <a href="/user/fines">My Fines</a> <a href="/user/contact">Contact</a> <a href="/admin">Admin</a></span>
+ <form th:action="@{/logout}" method="post" style="display:inline"><button type="submit">Logout</button></form>
+</nav>
+<div th:fragment="messages">
+ <p class="success" th:if="${message}" th:text="${message}"></p>
+ <p class="error" th:if="${error}" th:text="${error}"></p>
+</div>
+</body></html>

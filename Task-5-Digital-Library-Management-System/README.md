@@ -1,86 +1,62 @@
-# 📚 Digital Library Management System
+# Digital Library Management System
 
-<p align="center">
-  A web-based library management application developed using Java Spring Boot and MySQL.
-</p>
+A web-based library application built with **Java 17, Spring Boot, Spring Security, Spring Data JPA, MySQL, Thymeleaf and CSS**.
 
+## Features
 
----
+### Admin
+- Admin login and dashboard
+- Add, edit and delete books
+- View registered members
+- View all issued books and due dates
+- View fines and mark fines paid
+- View and resolve contact queries
 
-## 🚀 About the Project
+### User
+- Register and log in
+- Browse catalogue by category
+- Search by title or author
+- Issue available books (14-day loan period)
+- Return books
+- Automatic overdue fine: **₹5 per day**
+- Reserve an unavailable book
+- Send a query to the admin
 
-The **Digital Library Management System** is a web-based application designed to simplify library operations and improve book management.
+## Requirements
+- JDK 17+
+- Maven 3.8+
+- MySQL 8+
+- IntelliJ IDEA (recommended)
 
-This project was developed as **Task 5 of my Java Developer Internship at Oasis Infobyte**.
+## Database setup
+Create the database (or allow the app to create it):
+```sql
+CREATE DATABASE digital_library;
+```
+Configure credentials in `src/main/resources/application.properties`, or set environment variables:
+- `DB_USERNAME`
+- `DB_PASSWORD`
 
-## ✨ Features
+Default local settings use MySQL user `root` and an empty password. Change these to match your local MySQL setup.
 
-### 👨‍💼 Admin Module
-- Secure Admin Login
-- Add, Update and Delete Books
-- Manage Registered Members
-- View Issued Books and Due Dates
-- Manage Library Fines
-- Mark Fines as Paid
-- View Contact Queries
+## Run
+From the project directory:
+```bash
+mvn spring-boot:run
+```
+Or open the project in IntelliJ IDEA and run `DigitalLibraryApplication.java`.
 
-### 👨‍🎓 User Module
-- User Registration and Login
-- Browse Books by Category
-- Search Books by Title and Author
-- Book Issue and Return
-- Book Reservation
-- View Fine Details
-- Submit Contact Queries
+Open http://localhost:8080
 
-### 💰 Fine Management
-- Automatic Fine Calculation
-- Fine Rate: ₹5 per overdue day
-- Admin Fine Payment Management
+## Initial admin account
+- Username: `admin`
+- Password: `Admin@12345`
 
-## 🛠️ Technologies Used
+**Change the default admin password before using this beyond a local demo.**
 
-- Java 17
-- Spring Boot
-- Spring Security
-- Spring Data JPA
-- MySQL
-- Thymeleaf
-- HTML & CSS
-- Maven
-
-## 🎯 Learning Outcomes
-
-- Practical experience with Spring Boot
-- Database integration using MySQL and JPA
-- Authentication and Authorization
-- Backend Development
-- MVC Architecture
-- Building Database-Driven Web Applications
-
-## 👨‍💻 Developer
-
-**Shivam Tiwari**
-
-B.Tech – Computer Science Engineering
-
-- 💻 **GitHub:** [itsmeshivam-hub](https://github.com/itsmeshivam-hub)
-- 🔗 **LinkedIn:** [Shivam Tiwari](https://www.linkedin.com/in/shivamtiwari-tech/)
-
-## 🔗 Internship
-
-**Organization:** Oasis Infobyte
-
-**Domain:** Java Development
-
-**Task:** Task 5 – Digital Library Management System
-
----
-
-<p align="center">
-  ⭐ Thank you for visiting this project!
-</p>
-
-<p align="center">
-  **Built with Java and Spring Boot.**
-</p>
+## Notes / scope
+- New member registrations receive the USER role. The ADMIN role is never selectable on the public registration form.
+- Loan duration is 14 days. Fines are created on return at ₹5 for each overdue day.
+- Reservation requests are queued oldest-first. When a returned copy becomes available, the first waiting reservation is marked fulfilled; the user can then issue the available copy.
+- Fine payment is recorded by an administrator; no online payment gateway is connected.
+- This is an educational internship project. Add production-grade validation, audit logging, concurrency controls and deployment secrets management before real-world use.
